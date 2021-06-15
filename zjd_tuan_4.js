@@ -20,7 +20,7 @@
  *
  *
  **/
-const $ = new Env('前3开团');
+const $ = new Env('前4开团');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const JD_API_HOST2 = 'https://api.m.jd.com/api';
@@ -31,7 +31,7 @@ $.tuanExtra = [];
 $.canHelp = true;
 !(async () => {
     if (!getCookies()) return;
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         $.log();
         $.currentCookie = $.cookiesArr[i];
         if ($.currentCookie) {
@@ -42,7 +42,7 @@ $.canHelp = true;
     $.tuanExtra = [];
     await (8000);
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         $.currentCookie = $.cookiesArr[i];
         const userName = decodeURIComponent(
             $.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1],
