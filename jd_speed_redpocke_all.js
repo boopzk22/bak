@@ -31,7 +31,7 @@ const notify = $.isNode() ? require("./sendNotify") : "";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const linkId = "AkOULcXbUA_8EAPbYLLMgg";
 const signLinkId = "9WA12jYGulArzWS7vcrwhw";
-var newShareCodes = ['jDd298HUnFgjhHOGaA18hKTKk9-HCr9VGnn-huhD5Hk'];
+var newShareCodes = ['jDd298HUnFgjhHOGaA18hKTKk9-HCr9VGnn-huhD5Hk','SVI1kGphgFvMeLttkoj9Xw','FLvVa50OobLAb_1xO2fE15Lo4NsUdk884UxaxIoAefI'];
 var shareCodeType = "speedredpocke";
 
 let cookiesArr = [],
