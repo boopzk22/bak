@@ -129,7 +129,7 @@ if ($.isNode()) {
             }
             await helpOpenRedEnvelopeInteract('','')
             // await redEnvelopeInteractHome("","","");
-            newShareCodes.push('HXXWw2u04ABdDAqpyhiWZA')
+            //newShareCodes.push('HXXWw2u04ABdDAqpyhiWZA')
           } 
           continue;
         }
