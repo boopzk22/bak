@@ -27,7 +27,7 @@ const notify = $.isNode() ? require("./sendNotify") : "";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const linkId = "yMVR-_QKRd2Mq27xguJG-w";
 const signLinkId = "9WA12jYGulArzWS7vcrwhw";
-//var newShareCodes = [];
+var newShareCodes = [];
 var shareCodeType = "speedredpocke";
 
 let cookiesArr = [],
