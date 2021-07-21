@@ -7,17 +7,17 @@
 ============Quantumultx===============
 [task_local]
 #京东极速版红包
-15/30 * * * * https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js, tag=发财大赢家, enabled=true
+30 2-3 * * * https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js, tag=发财大赢家, enabled=true
 
 ================Loon==============
 [Script]
-cron "15/30 * * * *" script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js,tag=发财大赢家
+cron "30 2-3 * * *" script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js,tag=发财大赢家
 
 ===============Surge=================
-京东极速版红包 = type=cron,cronexp="15/30 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js
+京东极速版红包 = type=cron,cronexp="30 2-3 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js
 
 ============小火箭=========
-京东极速版红包 = type=cron,script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js, cronexpr="0 0 * * *", timeout=3600, enable=true
+京东极速版红包 = type=cron,script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js, cronexpr="30 2-3 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env("发财大赢家");
@@ -27,7 +27,7 @@ const notify = $.isNode() ? require("./sendNotify") : "";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const linkId = "yMVR-_QKRd2Mq27xguJG-w";
 const signLinkId = "9WA12jYGulArzWS7vcrwhw";
-var newShareCodes = [];
+//var newShareCodes = [];
 var shareCodeType = "speedredpocke";
 
 let cookiesArr = [],
