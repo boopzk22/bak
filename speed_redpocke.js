@@ -20,7 +20,7 @@ cron "30 2-3 * * *" script-path=https://raw.githubusercontent.com/cantain/JdScri
 京东极速版红包 = type=cron,script-path=https://raw.githubusercontent.com/cantain/JdScript/main/jd_speed_redpocke.js, cronexpr="30 2-3 * * *", timeout=3600, enable=true
 */
 
-const $ = new Env("发财大赢家");
+const $ = new Env("极速版加速");
 
 const notify = $.isNode() ? require("./sendNotify") : "";
 //Node.js用户请在jdCookie.js处填写京东ck;
